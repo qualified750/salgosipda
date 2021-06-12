@@ -32,3 +32,6 @@
 ![image-20210611210908674](https://user-images.githubusercontent.com/71720930/121789368-5571da80-cc10-11eb-81bc-56cbc9cddaf2.png)
 ![image-20210611210922923](https://user-images.githubusercontent.com/71720930/121789370-56a30780-cc10-11eb-8fab-d45cbc935e50.png)
 ![image-20210611211004748](https://user-images.githubusercontent.com/71720930/121789373-57d43480-cc10-11eb-84f4-cf8c53900989.png)
+
+6. **동영상 프레젠테이션**
+https://youtu.be/f3Ml7c4RU4E
