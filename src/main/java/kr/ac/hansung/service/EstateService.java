@@ -62,9 +62,15 @@ public class EstateService {
 			String mal = "";
 			String sl = "";
 			String detailURL = "";
+			String estateName = "";
+			String callNum = "";
 			String spl[];
 			String areal[];
 			BufferedImage img = null;
+			
+			String el = "";
+			String cnl = "";
+			String enl[];
 
 			// �Ź� ���?
 			String EstateURL_1 = "http://land.mk.co.kr/memul/list.php?bubcode=1129000000&mgroup=G&bdiv=A&page=";
@@ -83,6 +89,11 @@ public class EstateService {
 			Elements arlist = elem.select("tr:nth-child(2n-1) >td.Number.ScaleType > div");
 			// �Ź� ����
 			Elements pricelist = elem.select("strong");
+			
+			Elements estatenamelist = elem
+					.select("tr:nth-child(2n-1) > td.Contact.BottomLine > div > a > span:nth-child(2)");
+			
+			Elements callnumlist = elem.select("tr:nth-child(2n-1) > td.Contact.BottomLine > div > a > span.Tel");
 
 			for (Element e : elem.select("td:nth-child(6) > div > strong")) {
 				elements.add(e);
@@ -105,6 +116,14 @@ public class EstateService {
 					arl = arlist.get(i).text(); // ���� -----> ������ ���� �ʿ�(���� ����)
 					arl = arl.replace(" ", "");
 					areal = arl.split("��");
+					
+					el = estatenamelist.get(i).text();
+					el = el.replace("...", "");
+					enl = el.split("공인");
+
+					cnl = callnumlist.get(i).text();
+					estate.setEstatename(enl[0] + "공인중개사");
+					estate.setCallnum(cnl);
 
 					estate.setId(il2);
 					estate.setType(tl);
