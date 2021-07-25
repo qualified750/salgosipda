@@ -1900,6 +1900,13 @@
                             var detailview = "";
                             var imgres = "./resources/img/"
                                 + estates[i].id + ".jpg";
+                            
+                            var files = new Image;
+                            files.src = imgres;
+                            if(!files.complete){
+                            	var imgres = "./resources/img/"
+                                    + "no-image" + ".jpg";
+                            }
                             var areasplit = estates[i].area.split("공");
 
                             //뒤로가기 버튼

@@ -43,7 +43,6 @@ public class HomeController {
 
 		return "home";
 	}
-
 	// 서버가 시작될때 부동산 매물 크롤링 수행
 	@EventListener
 	public void onApplicationEvent(ContextRefreshedEvent event) throws IOException, ParseException {
