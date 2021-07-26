@@ -246,58 +246,58 @@
                 <ul class="ks-cboxtags">
                     <li><input type="checkbox" name="infra" value="cvs" id="cvs"><label for="cvs">편의점
                             <button type="button" name="checkButton" id="starbutton1" disabled>
-                                <img id="img" src="./resources/img/off1.png" onclick="toggleImg()">
+                                <img id="img" src="./resources/img/off1.png">
                             </button>
                         </label></li>
                     <li><input type="checkbox" name="infra" value="laundry" id="laundry"><label for="laundry">세탁소
                             <button type="button" name="checkButton" id="starbutton2" disabled>
-                                <img id="img2" src="./resources/img/off2.png" onclick="toggleImg2()">
+                                <img id="img2" src="./resources/img/off2.png">
                             </button>
                         </label></li>
                     <li><input type="checkbox" name="infra" value="safetybox" id="safetybox"><label
                             for="safetybox">여성안심택배함
                             <button type="button" name="checkButton" id="starbutton3" disabled>
-                                <img id="img3" src="./resources/img/off3.png" onclick="toggleImg3()">
+                                <img id="img3" src="./resources/img/off3.png">
                             </button>
                         </label></li>
                     <li><input type="checkbox" name="infra" value="mart" id="mart"><label for="mart">마트
                             <button type="button" name="checkButton" id="starbutton4" disabled>
-                                <img id="img4" src="./resources/img/off4.png" onclick="toggleImg4()">
+                                <img id="img4" src="./resources/img/off4.png">
                             </button>
                         </label></li>
                     <li><input type="checkbox" name="infra" value="subway" id="subway"><label for="subway">지하철
                             <button type="button" name="checkButton" id="starbutton5" disabled>
-                                <img id="img5" src="./resources/img/off5.png" onclick="toggleImg5()">
+                                <img id="img5" src="./resources/img/off5.png">
                             </button>
                         </label></li>
                     <li><input type="checkbox" name="infra" value="bank" id="bank"><label for="bank">은행
                             <button type="button" name="checkButton" id="starbutton6" disabled>
-                                <img id="img6" src="./resources/img/off6.png" onclick="toggleImg6()">
+                                <img id="img6" src="./resources/img/off6.png">
                             </button>
                         </label></li>
 
                     <li><input type="checkbox" name="infra" value="pharmacy" id="pharmacy"><label for="pharmacy">약국
                             <button type="button" name="checkButton" id="starbutton7" disabled>
-                                <img id="img7" src="./resources/img/off7.png" onclick="toggleImg7()">
+                                <img id="img7" src="./resources/img/off7.png">
                             </button>
                         </label></li>
 
                     <li><input type="checkbox" name="infra" value="hospital" id="hospital"><label for="hospital">병원
                             <button type="button" name="checkButton" id="starbutton8" disabled>
-                                <img id="img8" src="./resources/img/off8.png" onclick="toggleImg8()">
+                                <img id="img8" src="./resources/img/off8.png">
                             </button>
                         </label></li>
 
 
                     <li><input type="checkbox" name="infra" value="gym" id="gym"><label for="gym">헬스장
                             <button type="button" name="checkButton" id="starbutton9" disabled>
-                                <img id="img9" src="./resources/img/off9.png" onclick="toggleImg9()">
+                                <img id="img9" src="./resources/img/off9.png">
                             </button>
                         </label></li>
 
                     <li><input type="checkbox" name="infra" value="crime" id="crime"><label for="crime">범죄율
                             <button type="button" name="checkButton" id="starbutton10" disabled>
-                                <img id="img10" src="./resources/img/off10.png" onclick="toggleImg10()">
+                                <img id="img10" src="./resources/img/off10.png">
                             </button>
                         </label></li>
 
@@ -1903,10 +1903,12 @@
                             
                             var files = new Image;
                             files.src = imgres;
+                            
                             if(!files.complete){
                             	var imgres = "./resources/img/"
                                     + "no-image" + ".jpg";
                             }
+                            
                             var areasplit = estates[i].area.split("공");
 
                             //뒤로가기 버튼
